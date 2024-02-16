@@ -58,10 +58,10 @@ else:<br/>
              beta = min(beta, minValue_fun(successor, next_index, depth))</b><br/>
 Min function calls max to maximize Pacman’s moves. It calls itself when the move is to be played by the ghosts.</p>
 <p align="justify"><b>How is depth=4 reached? </b><br/>
-We increment the depth during a recursive call. The depth will be incremented until the desired depth is reached. Once we reach the desired depth, we evaluate the score at that state.
-min(beta, maxValue_fun(successor, next_index, depth+1) [0])</p>
+We increment the depth during a recursive call. The depth will be incremented until the desired depth is reached. Once we reach the desired depth, we evaluate the score at that state.<br/>
+<b>min(beta, maxValue_fun(successor, next_index, depth+1) [0])</b></p>
 <p align="justify"><b>How does the root node return the best action?</b><br/>
-bst_score, bst_actn = maxValue_fun(gameState, 0, 0)<br/>
+<b>bst_score, bst_actn = maxValue_fun(gameState, 0, 0)</b><br/>
 We call the max function on the initial game state, the starting index of Pacman and depth 0. It will assist the minimax agent to return the best action for Pacman.</p>
 <p align="justify"><b>How do you set the PlayerIndex for Pacman and for three ghosts?</b><br/>
 The player_index and next_index variable helps keep track of the turn of Pacman and the ghosts. Pacman’s player index is set to 0. The index for each ghost is determined by the number of agents in the game.
